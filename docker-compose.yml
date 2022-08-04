@@ -10,7 +10,7 @@ services:
       dockerfile: Dockerfile
 
     # name of the image built by Dockerfile
-    image: simcontainer-image
+    image: indevelopme-simcontainer-image
 
     # container environment settings
     environment:
