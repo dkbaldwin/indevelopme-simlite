@@ -11,7 +11,7 @@ services:
 
     # name of the image built by Dockerfile
     image:
-      indevelopme-simlite:v1
+      indevelopme-simlite:local
 
     # container environment settings
     environment:
