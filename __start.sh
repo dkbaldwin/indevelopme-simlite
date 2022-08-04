@@ -1,5 +1,14 @@
 #!/bin/bash
-
+########################
+# Legacy Code: 
+# Author: David Baldwin
+# Reviewer: David Baldwin
+# Last Reviewed: Aug 4, 2022
+# Last Updated:  Aug 4, 2022
+# Reason for deprecation:
+#         this script is no longer needed to build or run the application now that
+#         we are using docker
+###################
 #variables
 image_name="simcontainer-image"
 external_port="8000"

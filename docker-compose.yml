@@ -7,7 +7,7 @@ services:
       #source code for the application
       context: .
       # file the containing the build instructions
-      dockerfile: Dockerfile
+      dockerfile: portal/Dockerfile
 
     # name of the image built by Dockerfile
     image:
