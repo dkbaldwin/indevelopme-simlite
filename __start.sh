@@ -1,6 +1,6 @@
 #!/bin/bash
 ########################
-# Legacy Code: 
+# Legacy Code:
 # Author: David Baldwin
 # Reviewer: David Baldwin
 # Last Reviewed: Aug 4, 2022
