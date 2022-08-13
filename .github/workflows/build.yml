@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        
+
       - name: Start containers
-          run: docker-compose -f "docker-compose.yml" up -d --build
+
+          run: |
+          docker volume create --name=staticfiles
+          docker-compose -f "docker-compose.yml" up -d --build
