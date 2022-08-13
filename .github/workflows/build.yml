@@ -24,3 +24,4 @@ jobs:
           docker volume create --name=staticfiles
           docker-compose -f "docker-compose.yml" up -d --build
 
+
