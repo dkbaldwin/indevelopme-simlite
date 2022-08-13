@@ -14,9 +14,11 @@ jobs:
     # the job runs on "ubuntu-latest"
     runs-on: ubuntu-latest
     steps:
+      # checkout the repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # run docker-compose
       - name: Run Docker Compose
         run: |
           docker volume create --name=staticfiles
