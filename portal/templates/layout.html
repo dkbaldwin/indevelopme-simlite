@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Simlite{% endblock %}
+{% block head %}
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="{{url_for('static', filename='js/jquery-3.1.1.min.js')}}"></script>
+
+    <!---ROBOTO FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% endblock %}
+
+    <div class="container" >
+      <div class="content">
+        {% block content %}{% endblock %}
+      </div>
+    </div> <!-- /container -->
+
+{% block footer %}
+    <div class="panel-footer-1">
+	<section>
+		<div class="textwidget">
+			<a href="">Data Security</a> -
+			<a href="">Terms of Service</a> -
+			<a href="">Privacy Policy</a> &nbsp; &nbsp;   &copy; Copyright 2016
+		</div>
+	</section>
+    </div>
+<!-- Bootstrap core JavaScript-->
+
+    <script src="{{url_for('static', filename='js/moment.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap-plugins/transition.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap-plugins/collapse.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+{% endblock %}

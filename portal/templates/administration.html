@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover{
+    text-decoration:none;
+    color: #000000;
+  }
+  div.col-sm-4, div.col-sm-2 {
+    /*border: 1px solid black;*/
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  div.row{
+    margin-left: 100px;
+    text-align:center
+
+  }
+
+  img.icon_large{
+    height: 100px;
+  }
+
+  div.col-sm-4:hover{
+    background-color: #00FFFF;
+  }
+
+</style>
+{# all static images reference the app's static folder and do not exist with the dashboard #}
+<div class="row" >
+    <div class="col-sm-4">
+        <a href="{{url_for('user_sec.home')}}">
+        <div>User Security Management</div>
+        <img class="icon_large" src="{{ url_for('static', filename='images/admin/user_sec/user_logo.jpg') }}"/>
+        </a>
+    </div>
+    {# application builder #}
+    <div class="col-sm-4">
+    <a href="{{url_for('smanager.home')}}">
+      <div>Suite Management</div>
+      <img class="icon_large" src="{{ url_for('static', filename='images/admin/solution_builder/solution_builder_icon.png') }}"/>
+    </a>
+  </div>
+</div>
+{% endblock content %}
