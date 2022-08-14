@@ -32,19 +32,5 @@
 
 </style>
 {# all static images reference the app's static folder and do not exist with the dashboard #}
-<div class="row" >
-    <div class="col-sm-4">
-        <a href="{{url_for('user_sec.home')}}">
-        <div>User Security Management</div>
-        <img class="icon_large" src="{{ url_for('static', filename='images/admin/user_sec/user_logo.jpg') }}"/>
-        </a>
-    </div>
-    {# application builder #}
-    <div class="col-sm-4">
-    <a href="{{url_for('smanager.home')}}">
-      <div>Suite Management</div>
-      <img class="icon_large" src="{{ url_for('static', filename='images/admin/solution_builder/solution_builder_icon.png') }}"/>
-    </a>
-  </div>
-</div>
+    <h1>Administration page</h1>
 {% endblock content %}
