@@ -24,7 +24,7 @@ services:
         - logvolume01:/var/log
 
     ports:
-      - "8000:80"
+      - "9000:80"
 
 volumes:
   logvolume01: {}
