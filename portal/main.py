@@ -1,17 +1,20 @@
 from flask import Flask
 from pathlib import Path
 from flask import render_template
+from simcore.log_manager import log_writer as logw
 
 #create application
 app = Flask(__name__)
 
 # load the views
 @app.route('/')
-def hello():
+def landing_page():
+    logw.store_log(caller_name=__name__, log_message="landing_page():accessed", log_level="info")
     return render_template('homepage.html')
 
 @app.route('/admin')
 def admin_landing_page():
+    logw.store_log(caller_name=__name__, log_message="admin_landing_page():accessed", log_level="info")
     return render_template('administration.html')
 
 # renders the manual login page
