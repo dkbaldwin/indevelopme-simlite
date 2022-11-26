@@ -35,4 +35,4 @@ services:
 volumes:
   logvolume01: {}
   staticfiles:
-    external: true
+
